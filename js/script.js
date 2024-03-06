@@ -77,8 +77,8 @@ const startGame = () => {
     updateConsoleLog(logs);
     
     if (frameIndex < 6) {
-      jumper.src = `./images/jumper/_PNG/1_KNIGHT/_RUN/_RUN_00${frameIndex}.png`;
-      orcs.src = `./images/Orcs/_PNG/1_ORK/RUN/RUN_00${frameIndex}.png`;
+      jumper.src = `../images/jumper/_PNG/1_KNIGHT/_RUN/_RUN_00${frameIndex}.png`;
+      orcs.src = `../images/Orcs/_PNG/1_ORK/RUN/RUN_00${frameIndex}.png`;
       frameIndex++;
     } else {
       frameIndex = 0;
@@ -90,10 +90,10 @@ const startGame = () => {
 
       orcs.style.left = `${orcsPosition}px`;
 
-      jumper.src = './images/Jumper/_PNG/1_KNIGHT/_DIE/_DIE_006.png';
+      jumper.src = '../images/Jumper/_PNG/1_KNIGHT/_DIE/_DIE_006.png';
       jumper.style.width = '180px';
 
-      orcs.src = `./images/Orcs/_PNG/1_ORK/ATTAK/ATTAK_00${frameIndex}.png`;
+      orcs.src = `../images/Orcs/_PNG/1_ORK/ATTAK/ATTAK_00${frameIndex}.png`;
       orcs.style.width = '120px';
 
       if (frameIndex < 6) {
@@ -106,7 +106,7 @@ const startGame = () => {
 
       const continueLoop = setInterval(() => {
         if (frameIndex < 6) {
-          orcs.src = `./images/Orcs/_PNG/1_ORK/ATTAK/ATTAK_00${frameIndex}.png`;
+          orcs.src = `../images/Orcs/_PNG/1_ORK/ATTAK/ATTAK_00${frameIndex}.png`;
           orcs.style.width = '120px';
           orcs.style.marginLeft = '-50px';
           frameIndex++;

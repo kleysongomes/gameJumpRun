@@ -66,11 +66,9 @@ const startGame = () => {
     const jumperPosition = +window.getComputedStyle(jumper).bottom.replace('px', '');
 
     const logs = [
-      `movimet{`,
+      `log{`,
       `__Orcs Position: ${orcsPosition}`,
       `__Jumper Position: ${jumperPosition}`,
-      `}`,
-      `image{`,
       `__Orcs src: ${orcs.src}`,
       `__Jumper src: ${jumper.src}`,
       `}`,
